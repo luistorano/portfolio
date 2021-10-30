@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | Welcome</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Header and Navbar -->
@@ -13,9 +14,15 @@
         <h1>Luis Torano</h1>
         <nav>
             <ul class="nav-links">
-                <li><a href="./index.html#about-me">About Me</a></li>
-                <li><a href="./index.html#my-project">My Projects</a></li>
-                <li><a href="./index.html#reach-me">Reach Me</a></li>
+                <li>
+                    <a href="./index.html#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="./index.html#my-project">My Projects</a>
+                </li>
+                <li>
+                    <a href="./index.html#reach-me">Reach Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -42,32 +49,54 @@
 
     <!-- My Projects Section -->
     <section id="my-project" class="my-project-section">
+        <div class="run-buddy">
+            <a href="https://luistorano.github.io/run-buddy/" target="_blank">
+                <img class="run-buddy-gif" src="./assets/images/run-buddy-gif.gif" alt="Run Buddy Site">
+            </a>
+        </div>
+        
+            
+        
         <div>
             <h2>My Projects</h2>
             <br>
             <p>
-                My first site that I created in my bootcamp. It wa sa nice challenege and I  learned quite a lot with this project. Some things I learned was how to use CSS and organize everything in HTML.
+                My first site that I created in my bootcamp. It was a nice challenege and I  learned quite a lot with this project. Some things I learned was how to use CSS and organize everything in HTML.
+                It is called Run Buddy and it is a simple website made from scratch and is fully mobile accessible as well. I plan to add more improvements on it.
             </p>
         </div>
-                <a href="https://luistorano.github.io/run-buddy/">
-                <img class="run-buddy-gif" src="./assets/images/run-buddy-gif.gif" alt="Run Buddy Site">
-                </a>
+        
+                
     </section>
             
     <!-- Reach Me Section -->
+    
+    </div>
+    
     <footer id="reach-me" class="reach-me-section">
-        <h2>My Social Media</h2>
         <div>
-        <a href="#">LinkedIn</a>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">GitHub</a>
+        <h2>My Social Media</h2>
+        <br>
+        <p>
+            You can reach me in my social media bellow
+        </p>
+        <div class="social-icon">
+            <div>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+            </div>
+            <div>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+                
+            <div>
+                <a href="#"><i class="fa fa-github-square"></i></a>
+            </div>
         </div>
     </footer>
-    </div>
 </body>
+
+<!-- Navbar Effect -->
 <script>
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;

@@ -21,7 +21,8 @@
 }
 
 /* Body Styling */
-body {
+html, body {
+    height: 97%;
     background: rgb(217,17,166);
     background: linear-gradient(90deg, rgba(217,17,166,1) 6%, rgba(14,137,210,1) 100%);
     color: var(--main-text-color);
@@ -38,16 +39,6 @@ h2 {
 
 h3 {
     font-size: var(--header-secondary-size);
-}
-
-
-/* Transparent Background */
-.container {
-    background-color: var(--secondary-background);
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 25px;
 }
 
 
@@ -99,16 +90,33 @@ li, a {
 
 
 
+/* Transparent Background */
+.container {
+    background-color: var(--secondary-background);
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+    padding: 5%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+/* Transparent Background Styling End */
+
+
+
 /* About Me Section Styling */
 .about-me-section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    padding: 5%;
     border-bottom: 1px solid #fff;
-    border-width: 70%;
+}
+
+.avatar {
+    max-width: 100%;
+    justify-content: center;
 }
 
 .avatar-img {
@@ -119,35 +127,44 @@ li, a {
 
 
 /* My Projects Section Styling */
-
 .my-project-section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5%;
+    margin-top: 5%;
+}
+
+.run-buddy {
+    width: 100%;
+    margin-right: 5%;
 }
 
 .run-buddy-gif {
-    max-width: 100%;
-    padding: ;
+    display: inline-block;
+    margin-top: 8%;
+    width: 500ps;
+    border-radius: 15px;
 }
-
 /* My Project Section End */
 
 
-/* Utility Classes */
-
-
-
-
 /* Footer Styling */
+#reach-me {
+    background-color: var(--secondary-background);
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px 25px 0 0;
+    padding: 5%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#reach-me i {
+    width: 60px;
+}
 
 
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-    
-}
