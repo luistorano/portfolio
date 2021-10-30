@@ -1,45 +1,48 @@
-/* Font Family */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+/* Imports */
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Zen+Kaku+Gothic+New&display=swap');
 
 /* CSS Reset */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    font-family: 'Zen Kaku Gothic New', sans-serif ;
-    color: var(--text-color);
+    padding: 0;
 }
 
+/* Variables */
 :root {
-    --text-color: #fff;
-    --general-font-size: 30px;
-    --header-primary-size: 60px;
-    --header-secondary-size: 28px;
-    --border-color: #ffff;
-    --secondary-background: rgba(7, 7, 7, 0.6);
-    --hover-color: rgb(218, 19, 174);
+    --main-background-color: linear-gradient(90deg, rgba(217,17,166,1) 6%, rgba(14,137,210,1) 100%);;
+    --background-color-primary: rgba(7, 7, 7, 0.6);
+    --background-color-secondary: ;
+    --text-color: #ffff;
+    --primary-header: 60px;
+    --secondary-header: 30px;
+    --hover-color: rgb(218, 19, 174);;
+    --main-padding: 5%;
+    --main-margin: 0 auto 15px auto;
+    --main-border-radius: 25px;
 }
+/* Variables End */
 
-/* Body Styling */
+
+/* General Styling */
 html, body {
-    height: 97%;
-    background: rgb(217,17,166);
-    background: linear-gradient(90deg, rgba(217,17,166,1) 6%, rgba(14,137,210,1) 100%);
-    color: var(--main-text-color);
-}
-
-/* General Font Sizes */
-p {
-    font-size: var(--general-font-size);
+    background: var(--main-background-color);
+    color: var(--text-color);
+    font-family: 'Cuprum', sans-serif;
 }
 
 h2 {
-    font-size: var(--header-primary-size);
+    padding-top: 5%;
+    font-size: 50px;
+    margin-bottom: 2%;
 }
 
-h3 {
-    font-size: var(--header-secondary-size);
+p {
+    font-size: 20px;
+    line-height: 2;
 }
+/* General Styling End */
 
 
 /* Navbar Styling */
@@ -49,122 +52,141 @@ h3 {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    width: 90%;
+    width: 95%;
     transition: top 0.6s;
     padding: 10px 5%;
-    background-color: var(--secondary-background);
     border-radius: 0 0 15px 15px;
+    background-color: var(--background-color-primary);
     margin: 0 auto 15px auto;
-    
 }
 
-header h1 {
+#navbar h1 {
     font-size: 55px;
     transition: all 1s ease 0s;
 }
 
-
-li, a {
-    font-size: 30px;
-    color:var(--text-color);
-    text-decoration: none;
-}
-
-.nav-links {
+#navbar ul {
     list-style: none;
 }
 
-.nav-links li {
+#navbar li {
     display: inline-block;
+    text-decoration: none;
     padding: 30px;
+    margin: 5px;
 }
 
-.nav-links li a {
-    transition: all .5s ease 0s;
+#navbar a {
+    text-decoration: none;
+    color:var(--text-color);
+    font-size: 20px;
 }
 
-.nav-links li a:hover {
+#navbar a:hover {
     color: var(--hover-color);
+    transition: 0.3s;
 }
+
 /* Navbar Styling End */
 
 
-
-/* Transparent Background */
+/* Container Background */
 .container {
-    background-color: var(--secondary-background);
-    width: 90%;
+    background-color: var(--background-color-primary);
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 25px;
-    padding: 5%;
+    padding: 10px 5%;
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    border-radius: var(--main-border-radius);
 }
-/* Transparent Background Styling End */
+/* Container Background End */
 
 
+/* About Me Section */
 
-/* About Me Section Styling */
-.about-me-section {
+.about-me {
     display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid #fff;
+    flex-direction: row;
 }
 
-.avatar {
-    max-width: 100%;
-    justify-content: center;
-}
-
-.avatar-img {
-    max-width: 100%;
-}
-/* About Me Section Styling End */
-
-
-
-/* My Projects Section Styling */
-.my-project-section {
+.flex-container, .flex-right img {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5%;
-}
-
-.run-buddy {
     width: 100%;
-    margin-right: 5%;
+    padding-bottom: 5%;
+}
+/* About Me Section End */
+
+
+/* My Project Section */
+.my-project {
+    display: flex;
+    flex: 50%;
+    flex-direction: row;
 }
 
-.run-buddy-gif {
-    display: inline-block;
-    margin-top: 8%;
-    width: 500ps;
-    border-radius: 15px;
+.my-project, .flex-left img {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0;
 }
-/* My Project Section End */
 
 
-/* Footer Styling */
-#reach-me {
-    background-color: var(--secondary-background);
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 25px 25px 0 0;
-    padding: 5%;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+/* Comtact Me Section */
+.footer-heading {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.flex-container a i {
+    display: block;
+    padding: 30px;
+    font-size: 50px;
     text-align: center;
 }
 
-#reach-me i {
-    width: 60px;
+
+/* Meida Queries */
+@media screen and (max-width: 980px) {
+    /* Navbar */
+    #navbar {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar a {
+        font-size: 20px;
+    }
+
+    /* About Me */
+    .about-me {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-
-
-/* Media Queries */
+/*  */
+@media screen and (max-width: 768px) {
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+}

@@ -4,107 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Welcome</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Header and Navbar -->
-    <header id="navbar">
+    <!-- Navbar -->
+    <div id="navbar">
         <h1>Luis Torano</h1>
-        <nav>
-            <ul class="nav-links">
+        <div class="nav-items">
+            <ul>
                 <li>
-                    <a href="./index.html#about-me">About Me</a>
+                    <a href="#">About Me</a>
                 </li>
+
                 <li>
-                    <a href="./index.html#my-project">My Projects</a>
+                    <a href="#">My Projects</a>
                 </li>
+
                 <li>
-                    <a href="./index.html#reach-me">Reach Me</a>
+                    <a href="#">Contact Me</a>
                 </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <!-- Black Transparent Background -->
+    <!-- Background Container -->
     <div class="container">
 
-    <!-- About Me Section -->
-    <section id="about-me" class="about-me-section">
-            <div>
-                <h2>About Me</h2>
-                <br>
-                <p>
-                    Hello, I am Luis G. Torano Serrano. A 29 year old, aspiring web developer.
-                    <br>
-                    I have always had a passion for computers and technology. My first experience with creating websites was a little webpage called "MySpace". When I first started experimenting with it, I was quite blown away with how everything changed on the fly. I had no idea I was actually doing some sort of web development at the time. 
-                </p>   
-            </div> 
-            <div class="avatar">
-                <img class="avatar-img" src="./assets/images/avatar-1.png" alt="Avatar">
-            </div>
-    </section>
     
+    <!-- About Me Section -->
+    <h2>About Me</h2>
+    <br>
+    <div class="flex-container about-me">
+        <div class="flex-left">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rerum illo atque accusamus sapiente, ullam consectetur nisi officiis quis minus dolores ratione dignissimos provident. Quam quae rem omnis tempore corporis quas illo eaque ipsa, reiciendis eos amet? Consequatur unde commodi quisquam doloremque ab maiores est non inventore dolor, molestias quaerat, in libero voluptatibus reprehenderit possimus. Nostrum itaque ipsam facere asperiores.
+            </p>
 
-    <!-- My Projects Section -->
-    <section id="my-project" class="my-project-section">
-        <div class="run-buddy">
-            <a href="https://luistorano.github.io/run-buddy/" target="_blank">
-                <img class="run-buddy-gif" src="./assets/images/run-buddy-gif.gif" alt="Run Buddy Site">
-            </a>
-        </div>
-        
+            <br>
             
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam perspiciatis dolorem, id consequuntur fuga ipsa expedita harum sit, explicabo nobis, quibusdam deleniti impedit iste temporibus hic? Magnam error enim quasi odio, porro, modi corporis voluptate laudantium asperiores perferendis sint nemo ullam? Doloremque, dolorem beatae. Cumque nam voluptates, deserunt quia at maxime aspernatur, tenetur pariatur nemo, facilis consectetur eligendi magni obcaecati.
+            </p>
+        </div>
+        <div class="flex-right avatar-img">
+            <!-- Insert Avatar Image Here -->
+            <img src="./assets/images/avatar-1.png" alt="Luis's Avatar">
+        </div>
+    </div>
+
+    <!-- My Project Section -->
+    
+    <div class="flex-container my-project">
         
-        <div>
+        
+        <br>
+        <div class="flex-right">
             <h2>My Projects</h2>
             <br>
             <p>
-                My first site that I created in my bootcamp. It was a nice challenege and I  learned quite a lot with this project. Some things I learned was how to use CSS and organize everything in HTML.
-                It is called Run Buddy and it is a simple website made from scratch and is fully mobile accessible as well. I plan to add more improvements on it.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero culpa, hic officia exercitationem aliquid totam voluptas in odio accusantium aspernatur magnam. Libero odio placeat voluptatem qui, deleniti labore reprehenderit dolores quae iure ipsum quibusdam laborum, culpa alias quo provident quam quis esse aperiam! Corporis possimus similique nemo sapiente repellat. Dicta tempore quaerat quibusdam quasi? Cumque magnam eligendi reiciendis eos debitis.
             </p>
         </div>
-        
-                
-    </section>
-            
-    <!-- Reach Me Section -->
-    
     </div>
-    
-    <footer id="reach-me" class="reach-me-section">
-        <div>
-        <h2>My Social Media</h2>
-        <br>
-        <p>
-            You can reach me in my social media bellow
-        </p>
-        <div class="social-icon">
-            <div>
-                <a href="#"><i class="fa fa-facebook-square"></i></a>
-            </div>
-            <div>
-                <a href="#"><i class="fa fa-linkedin-square"></i></a>
-            </div>
-                
-            <div>
-                <a href="#"><i class="fa fa-github-square"></i></a>
-            </div>
+    <div class="flex-left run-buddy-img">
+            <h2>Run Buddy</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem possimus nisi fuga, quibusdam culpa vitae eum ducimus harum minima in, nam quia, dolore sunt laudantium molestias neque dicta. Perspiciatis dolorum ex enim exercitationem labore. A architecto obcaecati ratione optio laboriosam tenetur fuga error consequuntur molestiae modi iusto earum, corporis vitae.
+            </p>
+            <!-- Insert Run Buddy GIF Here -->
+        <a href="" ><img src="./assets/images/run-buddy-gif.gif" alt="Run Buddy GIF"></a> 
         </div>
+
+    <!-- Contact Me Section -->
+    <footer>
+    <h2 id="footer-heading">Contact Me</h2>
+    <p>
+        You can reach me in my Social Media Bellow
+    </p>
+    <div class="flex-container contact-me">
+        <a href="#">
+            <i class="fa fa-github-square"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa fa-linkedin-square"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa fa-facebook-square"></i>
+        </a>
+    </div>
     </footer>
+    </div>
 </body>
 
-<!-- Navbar Effect -->
 <script>
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
+var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
-    } else {
-    document.getElementById("navbar").style.top = "-800px";
-    }
+}   else {
+    document.getElementById("navbar").style.top = "-200px";
+}
     prevScrollpos = currentScrollPos;
 }
 </script>
