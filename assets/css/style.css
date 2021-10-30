@@ -1,3 +1,6 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
 /* CSS Reset */
 * {
     box-sizing: border-box;
@@ -42,7 +45,6 @@ h3 {
 .container {
     background-color: var(--secondary-background);
     width: 90%;
-    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 25px;
@@ -50,16 +52,18 @@ h3 {
 
 
 /* Navbar Styling */
-header {
+#navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 5%;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    width: 90%;
+    transition: top 0.6s;
+    padding: 10px 5%;
     background-color: var(--secondary-background);
-    border-radius: 0 0 55% 55%;
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto 15px auto;
     
 }
 
@@ -94,18 +98,21 @@ li, a {
 /* Navbar Styling End */
 
 
+
 /* About Me Section Styling */
 .about-me-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     padding: 5%;
+    border-bottom: 1px solid #fff;
+    border-width: 70%;
 }
 
 .avatar-img {
-    max-width: 70%;
-    margin-left: 30%;
+    max-width: 100%;
 }
 /* About Me Section Styling End */
 
@@ -115,20 +122,20 @@ li, a {
 
 .my-project-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     padding: 5%;
 }
 
 .run-buddy-gif {
-    max-width: 70%;
-    margin-left: 5%;
+    max-width: 100%;
+    padding: ;
 }
 
-
-
-
+/* My Project Section End */
 
 
 /* Utility Classes */
@@ -137,3 +144,10 @@ li, a {
 
 
 /* Footer Styling */
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    
+}
