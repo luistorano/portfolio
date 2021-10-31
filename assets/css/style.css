@@ -152,6 +152,7 @@ footer p {
     display: flex;
     justify-content: center;
     font-size: 50px;
+    margin: 30px;
     text-align: center;
     color: var(--text-color);
 }
